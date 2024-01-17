@@ -38,7 +38,7 @@
               <step>beyannameDTO</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>dfifBelge</step>
+              <step>gtip</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -47,11 +47,11 @@
           </expressionIdentifier>
           <factIdentifier>
             <name>1|1</name>
-            <className>tr.org.tim.beyanname.beyannameDTO</className>
+            <className>tr.org.tim.beyananme.beyannameDTO</className>
           </factIdentifier>
-          <className>java.lang.Boolean</className>
+          <className>java.lang.String</className>
           <factAlias>beyannameDTO</factAlias>
-          <expressionAlias>dfifBelge</expressionAlias>
+          <expressionAlias>gtip</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>505.5</columnWidth>
         </FactMapping>
@@ -61,7 +61,7 @@
               <step>beyannameDTO</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>hata</step>
+              <step>durum</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -70,11 +70,11 @@
           </expressionIdentifier>
           <factIdentifier>
             <name>1|1</name>
-            <className>tr.org.tim.beyanname.beyannameDTO</className>
+            <className>tr.org.tim.beyananme.beyannameDTO</className>
           </factIdentifier>
-          <className>java.lang.Boolean</className>
+          <className>java.lang.String</className>
           <factAlias>beyannameDTO</factAlias>
-          <expressionAlias>hata</expressionAlias>
+          <expressionAlias>durum</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>505.5</columnWidth>
         </FactMapping>
@@ -92,7 +92,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
-            <rawValue class="string">dfif belgesi yüklenmediyse</rawValue>
+            <rawValue class="string">GTIP 100 i?in onay masas?: onaymasasi1</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -108,24 +108,72 @@
           <FactMappingValue>
             <factIdentifier>
               <name>1|1</name>
-              <className>tr.org.tim.beyanname.beyannameDTO</className>
+              <className>tr.org.tim.beyananme.beyannameDTO</className>
             </factIdentifier>
             <expressionIdentifier>
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">false</rawValue>
+            <rawValue class="string">040510</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
               <name>1|1</name>
-              <className>tr.org.tim.beyanname.beyannameDTO</className>
+              <className>tr.org.tim.beyananme.beyannameDTO</className>
             </factIdentifier>
             <expressionIdentifier>
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
+            <rawValue class="string">OM1</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">GTIP 200 i?in onay masas?: onaymasasi2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>tr.org.tim.beyananme.beyannameDTO</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">2004107</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>tr.org.tim.beyananme.beyannameDTO</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">OM2</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -148,7 +196,7 @@
           <factAlias>INSTANCE 1</factAlias>
           <expressionAlias>PROPERTY 1</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>1381.0</columnWidth>
+          <columnWidth>114.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -171,6 +219,7 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>beyanname-gtip-onaymasasi-kontrol</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>

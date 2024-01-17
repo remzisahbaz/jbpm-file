@@ -4,10 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tr.org.tim</groupId>
   <artifactId>beyanname</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.7.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>beyanname</name>
-  <description>beyanname</description>
+  <description>beyananme,
+iş akışı
+kural
+test</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>

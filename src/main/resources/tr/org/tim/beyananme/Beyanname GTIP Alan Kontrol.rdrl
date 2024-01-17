@@ -1,0 +1,14 @@
+package tr.org.tim.beyananme;
+
+import java.lang.Number;
+
+rule "Beyanname GTIP Alan Kontrol"
+	dialect "mvel"
+	ruleflow-group "beyanname-gtip-alan-kontrol"
+	when
+		beyannameGTIP : beyannameDTO( gtip.trim().length() == 0 || gtip.trim().length() < 6 || gtip.trim().length() > 11 || gtip == null )
+	then
+		modify( beyannameGTIP ) {
+				setHata( true )
+		}
+end
